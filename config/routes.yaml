@@ -1,0 +1,11 @@
+test:
+    path: /test
+    controller: App\Controller\DefaultController::test
+
+serializer_test:
+    path: /serializer_test
+    controller: App\Controller\SerializerController::test
+
+serializer:
+    path: /serializer
+    controller: App\Controller\SerializerController::serialize
