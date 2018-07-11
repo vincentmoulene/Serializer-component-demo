@@ -1,11 +1,38 @@
-test:
-    path: /test
-    controller: App\Controller\DefaultController::test
+### PHP FUNCTIONS ###
+serialize_php:
+    path: /serialize/php
+    controller: App\Controller\PHPController::serialize
 
-serializer_test:
-    path: /serializer_test
-    controller: App\Controller\SerializerController::test
+deserialize_php:
+    path: /deserialize/php
+    controller: App\Controller\PHPController::deserialize
 
-serializer:
-    path: /serializer
+json_encode_php:
+    path: /json/encode/php
+    controller: App\Controller\PHPController::jsonEncode
+
+json_decode_php:
+    path: /json/decode/php
+    controller: App\Controller\PHPController::jsonDecode
+
+
+### SERIALIZER COMPONENT ###
+serialize:
+    path: /serialize/json
     controller: App\Controller\SerializerController::serialize
+
+deserialize:
+    path: /deserialize/json
+    controller: App\Controller\SerializerController::deserialize
+
+serialize_full:
+    path: /serialize/json/full
+    controller: App\Controller\SerializerController::serializeFull
+
+update:
+    path: /serialize/update
+    controller: App\Controller\SerializerController::update
+
+export:
+    path: /serialize/export
+    controller: App\Controller\SerializerController::exportCSV

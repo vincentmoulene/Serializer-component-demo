@@ -9,9 +9,11 @@
 namespace App\Model;
 
 
-class Meetup
+class MeetupFull
 {
+    public $id;
     public $name;
+    public $date;
+    public $logo;
 
-//    private $year;
 }
